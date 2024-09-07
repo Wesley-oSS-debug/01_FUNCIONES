@@ -22,11 +22,17 @@ int main(){
 }
 
 int suma(int tam, int array[]){
-	if(tam==1){
-		return array[0];
+	if(tam==0){
+		return 0;
 	}else{
-		
+		if(tam==1){
+			return array[0];
+		}else{
+			
 		return array[tam-1] + suma(tam-1,array);
+			
+		}
+		
 	}
 
 }
